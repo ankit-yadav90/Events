@@ -1,12 +1,21 @@
+//type button event
 let btn1 = document.querySelector("#btn1");
 
-btn1.onclick = (b) => {
-    console.log(b);
+btn1.onclick = (evt) => {
+    console.log(evt);
+    console.log(evt.type);
+    console.log(evt.target);
+    console.log(evt.clientX,evt.clientY);
    
 }
 
+//type mouse event
 let div = document.querySelector("div");
 
-div.onmouseover = () => {
+div.onmouseover = (evt) => {
+    console.log(evt);
+    console.log(evt.type);
+    console.log(evt.target);
+    console.log(evt.clientX,evt.clientY);
     console.log("you are inside div");
 }
